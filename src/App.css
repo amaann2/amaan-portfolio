@@ -42,13 +42,15 @@ body {
   list-style: none;
   padding-left: 10px;
   font-size: 17px;
-  
+
 }
-.menu ul li a{
+
+.menu ul li a {
   text-decoration: none;
   color: #333;
   cursor: pointer;
 }
+
 .menu ul li a:hover {
   color: #facf0f;
 }
@@ -229,11 +231,14 @@ strong {
 
 
 .containerr {
-  display: flex;
+  /* display: flex; */
   /* width: 1040px; */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap; */
+
+  /* position: relative; */
+  /* top: 0; */
   /* padding-bottom: 80px; */
 }
 
@@ -346,12 +351,25 @@ strong {
   text-transform: uppercase;
 }
 
+.whatsapp-icon {
+  z-index: 100000;
+
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 50px;
+  color: white;
+  border-radius: 50%;
+  background-color: #1bd741;
+  padding: 13px;
+}
+
 
 @media only screen and (max-width: 37.5em) {
   .navbar {
     height: 60px;
     width: 100vw;
-    
+
 
   }
 
@@ -370,9 +388,9 @@ strong {
   .menu nav {
     margin-left: 2rem;
     align-items: center;
-    
+
   }
-  
+
   .menu ul li {
     padding-left: 0px;
     font-size: 13px;
@@ -458,5 +476,16 @@ strong {
     margin-top: 13rem;
     /* background-color: #333; */
     /* color: #facf0f; */
+  }
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;
   }
 }
