@@ -37,7 +37,8 @@ export const project = [
     title: "coaching classes",
     about:
       "This website is for local coaching classes. The purpose of the website is to provide an online platform for the coaching classes to showcase their services and reach out to potential students",
-    url: "https://lotusacademey.000webhostapp.com/",
+    // url: "https://lotusacademey.000webhostapp.com/",
+    url: "https://lotusacademy.netlify.app/",
     imgUrl: "https://i.ibb.co/4JhfPbY/coaching.png",
     tools: ["html", "css", "javascript"],
   },
