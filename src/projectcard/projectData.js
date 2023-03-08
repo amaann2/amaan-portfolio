@@ -4,7 +4,7 @@ export const project = [
     title: "Eccomerce Website",
     about:
       "One of the key features of  E-commerce App is user authentication, You can create a user account and sign in , Another important feature of our E-commerce App is the shopping cart, wishlist , which is stored in Redux. You can add items to your cart and view them at any time, even if you leave the app and come back later.",
-    url: "https://crwnclothinggg.netlify.app/",
+    url: "https://fashionmarkett.netlify.app/",
     imgUrl: "https://i.ibb.co/ZHsV7Qv/clothing.png",
     tools: [
       "html",
