@@ -19,6 +19,12 @@
     object-fit: cover;
 }
 
+img {
+    padding: 20px;
+    cursor: pointer;
+}
+
+
 .card-body {
     display: flex;
     flex-direction: column;

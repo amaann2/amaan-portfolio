@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./projectcard.css";
 
 const ProjectCard = ({ ele }) => {
@@ -16,11 +16,13 @@ const ProjectCard = ({ ele }) => {
       <div className="container">
         <div className="containerr">
           <div className="card" data-aos="flip-left">
-            {/* <div className="card-header" style={{ backgroundImage: `url(${imgUrl})`}}> */}
-            {/* <img
-                src={ele.imgUrl}
-                alt="projectImage"
-              /> */}
+            {/* <div className="card-header" > */}
+            <img
+
+              src={ele.imgUrl}
+              alt="projectImage"
+              className="project-image"
+            />
             {/* </div> */}
             <div className="card-body">
               <h4>{title}</h4>

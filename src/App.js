@@ -5,7 +5,8 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiOutlineConsoleSql,
-  AiOutlineWhatsApp
+  AiOutlineWhatsApp,
+  AiOutlineMail
 } from "react-icons/ai";
 import { FaCss3Alt, FaReact, FaBootstrap, FaJava } from "react-icons/fa";
 import { SiJavascript, SiFirebase, SiRedux } from "react-icons/si";
@@ -23,21 +24,7 @@ import "aos/dist/aos.css";
 
 function App() {
   const [data] = useState(project);
-  const [theEnd, setTheEnd] = useState(0);
-  const [navbarTop, setNavbarTop] = useState(0);
 
-  const handleScroll = () => {
-    const scrollToTop =
-      window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollToTop > theEnd) {
-      setNavbarTop(-80);
-    } else {
-      setNavbarTop(0);
-    }
-    setTheEnd(scrollToTop);
-  };
-
-  window.addEventListener("scroll", handleScroll);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -45,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="navbar" id="navbar" style={{ top: navbarTop }}>
+      <div className="navbar" id="navbar" >
         <div className="logo">
           <h2>Amaan </h2>
         </div>
@@ -100,6 +87,7 @@ function App() {
                 <AiFillLinkedin className="icons" />
               </a>
             </div>
+
             <div className="icon">
               <a
                 href="https://github.com/amaann2"
@@ -111,7 +99,25 @@ function App() {
             </div>
             <div className="icon">
               <a
-                href="https://www.instagram.com/trexxploree"
+                href="mailto:ansari028amaan@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineMail className="icons" />
+              </a>
+            </div>
+            <div className="icon">
+              <a
+                href="//wa.me/918291126896"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineWhatsApp className="icons" />
+              </a>
+            </div>
+            <div className="icon">
+              <a
+                href="https://www.instagram.com/amaann.2"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -260,11 +266,25 @@ function App() {
                     <AiFillGithub className="contact-icon" />
                   </a>
                   <a
-                    href="https://github.com/amaann2"
+                    href="mailto:ansari028amaan@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineMail className="contact-icon" />
+                  </a>
+                  <a
+                    href="https://instagram.com/amaann.2"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <AiFillInstagram className="contact-icon" />
+                  </a>
+                  <a
+                    href="//wa.me/918291126896"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineWhatsApp className="contact-icon" />
                   </a>
                 </div>
               </div>
@@ -310,9 +330,7 @@ function App() {
         </div>
       </div>
 
-      <div className="whatsapp">
-        <a href="//wa.me/918291126896" target={"_blank"} rel="noreferrer" title="Chat me on Whatsapp"><AiOutlineWhatsApp  className="whatsapp-icon"/></a>
-      </div>
+
 
       {/* footer  */}
       <div id="footer" className="footer">
